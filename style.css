@@ -1,0 +1,439 @@
+/* ========== Header ========== */
+#Header {
+  background-image: url("./assets/header-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 110vh;
+}
+
+/* ========== Navigation Bar ========== */
+.navbar {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  width: 85%;
+  margin: 0 auto;
+}
+.navbar-brand {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+.navbar-brand span {
+  color: #1c81ad;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+}
+
+/* ========== Home Main ========== */
+.custom-home-main {
+  font-family: "Poppins", sans-serif;
+  top: 45%;
+}
+.custom-home-main h4 {
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+.custom-home-main h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  padding-top: 5px;
+  padding-bottom: 40px;
+}
+.custom-home-main h1 {
+  color: #03c988;
+}
+.custom-home-main .main-beforetyped {
+  color: white;
+}
+.custom-home-main p {
+  font-weight: 200;
+  opacity: 0.8;
+  width: 600px;
+}
+@media (max-width: 1200px) {
+  .custom-home-main .main-beforetyped {
+    display: block;
+  }
+}
+
+/* ========== Hire Me Button ========== */
+.custom-btn-main {
+  bottom: 15%;
+  font-family: "Poppins", sans-serif;
+}
+.btn-round {
+  border-radius: 24px !important;
+}
+.btn.btn-medium {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 40px;
+}
+.highlight-button {
+  border: 3px solid #03c988;
+  display: inline-block;
+  padding: 8px 20px 9px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #03c988;
+  background-color: transparent;
+}
+.highlight-button:hover {
+  background-color: #03c988;
+  border: 3px solid #03c988;
+  color: #fff;
+}
+.highlight-button i {
+  color: #03c988;
+  margin-left: 10px;
+}
+.highlight-button:hover i {
+  color: #fff;
+}
+
+/* ========== About ========== */
+/* ========== Adjust image position ========== */
+.about-left {
+  position: absolute;
+  top: calc(110vh - 80px);
+  width: 400px;
+}
+.about-left img {
+  border-radius: 20px;
+}
+/* ========== Adjust About position ========== */
+.about-right {
+  padding-left: 500px;
+  padding-top: 75px;
+  font-family: "Poppins", sans-serif;
+  color: #141819;
+  max-width: 1250px;
+}
+.about-right .heading,
+.services-left .heading,
+#Portfolio .heading {
+  font-size: 4rem;
+  font-weight: 700;
+  position: relative;
+}
+.about-right .heading::after,
+.services-left .heading::after,
+#Portfolio .heading::after {
+  position: absolute;
+  content: "";
+  height: 5px;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  width: 27.5%;
+  background: #499abd;
+}
+.about-right .heading .heading-highlight,
+.services-left .heading .heading-highlight,
+#Portfolio .heading .heading-highlight {
+  color: #499abd;
+}
+.about-right h3 {
+  padding-top: 60px;
+  font-size: 2.2rem;
+}
+.about-right h5 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.about-right h6 {
+  padding-top: 35px;
+  font-weight: 300;
+  line-height: 1.45rem;
+}
+.about-right p {
+  font-weight: 300;
+  padding-top: 35px;
+  line-height: 1.25rem;
+  font-size: 0.92rem;
+}
+
+/* ========== Social Media Icons ========== */
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 2.2em 0em 0em -0.5em;
+}
+.social-icons li {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+}
+.social-icons i {
+  color: #141819;
+  opacity: 80%;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all 265ms ease-out;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons a:before {
+  transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border: 2px solid #141819;
+  opacity: 80%;
+  border-radius: 100%;
+  display: block;
+  transition: all 265ms ease-out;
+}
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.social-icons a:hover i {
+  transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  opacity: 90%;
+  transition: all 265ms ease-in;
+}
+
+/* ========== Services ========== */
+#Services {
+  margin-top: 150px;
+  background-image: url("./assets/services-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.services-left {
+  width: 35%;
+  padding: 50px 0px 200px 0px;
+}
+.services-left .heading::after {
+  width: 56%;
+}
+.services-left h6 {
+  margin-top: 40px;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.services-right {
+  width: 65%;
+  padding: 50px 0px 50px 0px;
+  font-family: "Poppins", sans-serif;
+}
+.services-right .row {
+  padding-top: 40px;
+}
+.service-item {
+  border-radius: 10px;
+  transition: 0.3s all;
+}
+.service-icon {
+  color: #499abd;
+  margin-bottom: 15px;
+  font-size: 2.2rem;
+  padding-top: 20px;
+}
+.service-title {
+  font-size: 1.65rem;
+  letter-spacing: 1px;
+}
+.service-description {
+  margin-top: 25px;
+  opacity: 80%;
+  line-height: 1.5rem;
+  padding-bottom: 20px;
+}
+.service-item:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(135deg, rgba(73, 154, 189, 1) 0%, rgba(28, 129, 173, 1) 60%);
+  box-shadow: 1px 1px 36px -1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 36px -1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 36px -1px rgba(0, 0, 0, 0.2);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.service-item:hover .service-icon {
+  color: white;
+}
+
+/* ========== Portfolio ========== */
+#Portfolio {
+  margin-top: 100px;
+}
+#Portfolio .heading::after {
+  width: 18.5%;
+  bottom: -2px;
+}
+#Portfolio p {
+  width: 50%;
+  padding-top: 20px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  opacity: 90%;
+  letter-spacing: -0.25px;
+}
+
+/* ========== Splide ========== */
+.splide {
+  padding: 3rem 0;
+}
+.splide__slide {
+  display: flex;
+  justify-content: center;
+}
+.splide__slide img {
+  width: 90%;
+  height: 25vw;
+  object-fit: cover;
+}
+.splide__arrow {
+  background-color: transparent;
+  font-size: 1.5rem;
+  top: auto;
+  bottom: -4rem;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.15s;
+}
+.splide__arrow:hover {
+  color: #499abd;
+  transition: 0.15s;
+}
+.splide__arrow .fa-arrow-left {
+  margin-right: 16px;
+}
+.splide__arrow .fa-arrow-right {
+  margin-left: 16px;
+}
+.splide__pagination__page {
+  background-color: #999;
+  margin: 0 10px;
+  transform: scale(0.8);
+}
+.splide__pagination__page.is-active {
+  border: 1.8px solid #499abd;
+  transform: scale(1.5);
+}
+
+/* ========== Footer ========== */
+#Footer {
+  margin-top: 150px;
+}
+
+/* ========== Footer Left ========== */
+.footer-left {
+  background: linear-gradient(150deg, rgba(99, 170, 200, 1) 0%, rgba(52, 142, 181, 1) 60%);
+  padding: 0;
+  position: relative;
+  height: 550px;
+  border-radius: 0 10px 0 0;
+}
+.footer-left-inside {
+  position: absolute;
+  top: 50%;
+  left: 42.5%;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+.footer-left-inside h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+.footer-left img {
+  border-radius: 0 10px 0 0;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.35;
+}
+.footer-left-btn {
+  border: 2px solid white;
+  padding: 15px 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-top: 42px;
+  transition: 0.3s all ease;
+}
+.footer-left-btn:hover {
+  color: #499abd;
+  transform: translateY(-3px);
+  transition: 0.3s all ease;
+}
+
+/* ========== Footer Right ========== */
+.footer-right {
+  background-image: url("./assets/header-bg.png");
+  background-size: contain;
+  margin-top: 80px;
+  color: #e6f0f5;
+}
+.contact-info .social-container {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.contact-info .social-icons {
+  margin-top: 10px;
+}
+.contact-info .social-icons li {
+  transform: scale(0.85);
+  margin: 0 -3px;
+}
+.contact-info .social-icons i {
+  color: #e6f0f5;
+}
+.contact-info .social-icons a:before {
+  transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  border: 2px solid #e6f0f5;
+}
+.contact-info .social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.contact-info {
+  margin-left: 80px;
+}
+.contact-info ul {
+  padding: 0;
+}
+.contact-info ul li {
+  list-style-type: none;
+  margin-top: 16px;
+  opacity: 0.8;
+}
+.contact-info ul li i {
+  padding-right: 12px;
+  opacity: 1;
+}
+.contact-info p {
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  opacity: 0;
+  background-color: #03c988;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  transition: 0.3s all;
+  transform: scale(0.95);
+}
