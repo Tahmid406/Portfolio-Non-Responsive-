@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 /* ========== Header ========== */
 #Header {
   background-image: url("./assets/header-bg.png");
@@ -56,11 +60,6 @@
   font-weight: 200;
   opacity: 0.8;
   width: 600px;
-}
-@media (max-width: 1200px) {
-  .custom-home-main .main-beforetyped {
-    display: block;
-  }
 }
 
 /* ========== Hire Me Button ========== */
@@ -238,6 +237,7 @@
 .service-item {
   border-radius: 10px;
   transition: 0.3s all;
+  padding: 0 20px;
 }
 .service-icon {
   color: #499abd;
@@ -436,4 +436,61 @@
   color: white;
   transition: 0.3s all;
   transform: scale(0.95);
+}
+
+@media (max-width: 1200px) {
+  .custom-home-main .main-beforetyped {display: block;}
+  #About .about-left {
+    position: static;
+    width: 1200px;
+    margin-right: 50px;
+    padding-top: 75px;
+  }
+  #About .about-right {padding-left: 0;}
+  .custom-services{flex-direction: column;}
+  .services-left{
+    padding-bottom: 10px;
+    width: 60%;
+  }
+  .services-left h6{text-align: center;}
+  .services-right{width: 100%;}
+}
+
+@media (max-width: 768px) {
+  .navbar{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .custom-home-main h1 {font-size: 3.75rem;}
+  .custom-home-main h4 {font-size: 2rem;}
+  .custom-home-main p {width: 100%;}
+  #About .custom-flex-direction-column{flex-direction: column;}
+  #About .about-left{width: 100%;}
+  .services-left{
+    padding-bottom: 20px;
+    width: 80%;
+  }
+  #Portfolio p{width: 100%;}
+  #Portfolio .heading::after { width: 40%;}
+  .splide__slide img {width: 95%; height: unset;}
+  .footer-right{margin-top: 0px;}
+  .footer-left{height: 400px;}
+  .footer-left-inside h1{font-size: 3.5rem;}
+  .footer-left-inside{width: 90%; left: 55%;}
+}
+
+@media (max-width: 576px) {
+  .custom-home-main h1 {font-size: 2.75rem;}
+  .custom-home-main h4 {font-size: 1.75rem;}
+  .custom-home-main p {font-size: 0.9rem;}
+  .services-left{width: 90%;}
+  .services-left .heading{font-size: 3rem;}
+  #Portfolio .heading{font-size: 3rem;}
+  .footer-left{height: 350px;}
+  .footer-left-inside h1{font-size: 3rem;}
+  .footer-left-inside a{
+    margin-top: 20px;
+    padding: 12px 20px;
+  }
+  .contact-info{margin-left: 10px;}
 }

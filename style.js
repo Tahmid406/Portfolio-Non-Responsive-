@@ -17,6 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
     focus: "center",
     padding: "25%",
     speed: 1500,
+    breakpoints: {
+      768: {
+        padding: "0%",
+        arrows: false,
+      },
+    },
   });
 
   splide.mount();
